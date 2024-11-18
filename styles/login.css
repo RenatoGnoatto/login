@@ -1,0 +1,160 @@
+:root {
+  --background: #0D1B2A;
+  --background-secondary: #1B263B;
+  --border: #415A77;
+  --button: #778DA9;
+  --primary: #4aaae6;
+  --text: #E0E1DD;
+  --text-secondary: #A4B0C3;
+  --success: #3D5A80;
+}
+
+body, html {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text); 
+
+  background-color: var(--background);
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+
+  background-color: var(--primary);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &[data-variant="outlined"] {
+    background-color: var(--background);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex: 1 0 0;
+
+  section {
+    display: flex;
+    flex: 1 0 0;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2rem;
+      gap: 1rem;
+      border-radius: 8px;
+      outline: 1px solid var(--text);
+    }
+
+    &:first-child {
+      background-color: var(--background-secondary);
+      background-image: url("../assets/login.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.field {
+  position: relative;
+  
+  z-index: 1;
+
+  width: 16rem;
+  height: 2rem;
+
+  background-color: var(--background-secondary);
+  
+  border-radius: 8px;
+  
+  padding: 1rem;
+
+  input {
+    all: unset;
+    
+    position: absolute;
+
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    
+    border: 0;
+    padding: 0;
+    outline: 0;
+    
+    transform: translateY(-50%);
+    
+    background-color: transparent;
+  }
+
+  &:focus-within {
+    outline: 1px solid var(--text);
+  }
+}
+
+.forgot-password {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-left: auto;
+
+  cursor: pointer;
+}
+
+.welcome-text {
+  padding: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+
+  background-color: var(--background-secondary);
+
+  font-size: 20;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 24rem;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+  }
+}

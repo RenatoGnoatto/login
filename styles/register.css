@@ -77,9 +77,9 @@ main {
       outline: 1px solid var(--text);
     }
 
-    &:first-child {
+    &:last-child {
       background-color: var(--background-secondary);
-      background-image: url("./bg.webp");
+      background-image: url("../assets/register.webp");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -156,5 +156,10 @@ main {
 
   p {
     font-size: 16px;
+    a {
+      text-decoration: none;
+      color: var(--text);
+    }
   }
+
 }

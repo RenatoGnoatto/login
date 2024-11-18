@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <title>TCC</title>
 </head>
 
@@ -16,7 +16,7 @@
       <div class="welcome-text">
         <h1>Bem-vindo!</h1>
         <p>Estamos extremamente felizes em tê-lo aqui!</p>
-        <p>Caso já tenha um usuário cadastrado, faça <strong>login</strong>, caso contrário você também pode se <strong>registar</strong></p>
+        <p>Caso já tenha um usuário cadastrado, faça login, caso contrário você também pode se registar</p>
       </div>
     </section>
     <section>
@@ -26,19 +26,17 @@
         </div>
 
         <div class="field">
-          <input placeholder="Usuário" type="text">
+          <input id="username" placeholder="Usuário" type="text">
         </div>
         
         <div class="field">
-          <input placeholder="Senha" type="password">
+          <input id="password" placeholder="Senha" type="password">
         </div>
 
-        <p class="forgot-password">esqueci minha senha</p>
-
-        <button type="submit">
+        <button id="login-button" type="button">
           Fazer Login
         </button>
-        <button data-variant="outlined" type="submit">
+        <button id="register-button" data-variant="outlined" type="button">
           Criar conta
         </button>
       </form>
@@ -47,6 +45,5 @@
   </main>
 </body>
 
-<script src="main.js"></script>
-
+<script src="scripts/login.js"></script>
 </html>
